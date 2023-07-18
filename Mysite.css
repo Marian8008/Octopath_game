@@ -1,0 +1,214 @@
+body {
+    background-image: url("imagenes/Octopath_Traveler_character_background.webp");
+    Background-position: 50% 0;
+    background-attachment: fixed;
+    background-size: cover;
+}
+footer {
+    background-color: black;
+    margin-bottom: -10px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    position: relative;
+    bottom: 0;
+}
+h1 {
+    color: white;
+    font-size: 400%;
+    font-weight: 150;
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+    font-family: 'The Nautigal', cursive;
+}
+h2 {
+    font-size: xx-large;
+    color: white;
+}
+/******************************IDs*****************************************/
+#logo {
+    width: 400px;
+}
+#icono {
+    width: 50px;
+    position: relative;
+    top: 10px;
+}
+#trailers {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+}
+/******************************CLASES****************************************/
+.texto {
+    color: white;
+    margin: 200px;
+    display: inline;
+    font-size: 0.5cm;
+    font-family: cursive;
+}
+.clase_generica {
+    color: white;
+    background-color: rgba(128, 97, 60, .5);
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+.accomodation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta {
+    width: 900px;
+    font-size: x-large;
+    padding: 10px;
+}
+.titulo {
+    display: inline-block;
+}
+.scroll {
+    width: 500px;
+    height: 350px;
+    color: white;
+    border: 2px solid black;
+    margin: 5px;
+    position: relative;
+    left: 500px;
+    font-size: large;
+    overflow: auto;
+}
+.texto_2 {
+    color: white;
+    font-size: 0.5cm;
+}
+.ul_1 {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.li_1 {
+
+    font-size: 0.7cm;
+    padding: 5px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.wrap {
+    width: 95%;
+    min-width: 900px;
+}
+/********Button*******/
+.button {
+    border-radius: 4px;
+    background-color: rgba(128, 97, 60, 0.75);
+    border: 2px solid white;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 220px;
+    transition: all 0.5s;
+    /*resumo y realizo todas las transiciones con all*/
+    cursor: pointer;
+    /*convierte el puntero flecha en una mano al posicionarse sobre el boton*/
+    margin: 5px;
+}
+.button span {
+    /*(1)*/
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: white;
+    font-family: 'The Nautigal', cursive;
+    font-size: 200%;
+}
+.button span:after {
+    /*(2)*/
+    content: '\00bb';
+    /*codigo css para las comillas latinas*/
+    position: absolute;
+    color: white;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+/*hovers para la transicion*/
+.button:hover span {
+    /*(1)*/
+    padding-right: 25px;
+    /*se usa padding para no mover el boton en si, sino "correr" la PALABRA unicamente(no el caracter)*/
+}
+.button:hover span:after {
+    /*(2)*/
+    opacity: 1;
+    right: 0;
+    /*(1) afecta a la palabra corriendola, y (2) afecta a la comilla haciendola aparecer*/
+}
+@media (max-width:768px) {/*768x1024*/
+    body {
+        background-image: url("imagenes/Octopath_Traveler_character_background.webp");
+        position: absolute;
+    }
+
+    #logo {
+        width: 25%;
+        height: auto;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: start;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+    .accomodation {
+        display: flex;
+        align-items: flex-start;
+    }
+    .scroll {
+        width: 500px;
+        height: 350px;
+        color: white;
+        border: 2px solid black;
+        margin: 5px;
+        font-size: large;
+        overflow: auto;
+        position: relative;
+        left: 0;
+    }
+    .button {
+        border-radius: 4px;
+        background-color: rgba(128, 97, 60, 0.75);
+        border: 2px solid white;
+        text-align: center;
+        font-size: 18px;
+        width: 150px;
+        transition: all 0.5s;
+        /*resumo y realizo todas las transiciones con all*/
+        cursor: pointer;
+        /*convierte el puntero flecha en una mano al posicionarse sobre el boton*/
+        margin: 1px;
+    }
+    h1 {
+
+        font-size: 200%;
+        font-weight: 150;
+
+    }
+    h2 {
+        font-size: 200%;
+        font-weight: 150;
+
+    }
+    #cyrus_g{
+        width: 75%;
+        height: auto;
+    }
+}

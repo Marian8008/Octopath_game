@@ -1,0 +1,23 @@
+.tarjetas_mecanicas {
+    background-color: rgba(128, 97, 60, .5);
+    border: 2px solid black;
+    margin: 5px;
+    width: 60%;
+    padding: 10px;
+}
+#talentos {
+    display: flex;
+    align-items: center;
+    padding-left: 300px;
+}
+.texto-imagen {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 150px 2000px;
+}
+

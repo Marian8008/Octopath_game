@@ -1,0 +1,69 @@
+main {
+    width: 550px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-column-gap: 300px;
+    grid-row-gap: 150px;
+}
+
+.tarjetas_viajeros {
+    background-color: rgba(128, 97, 60, .5);
+    border: 2px solid black;
+    margin: 5px;
+    width: 400px;
+    height: 500px;
+}
+
+.img_tarjeta {
+    width: 100%;
+}
+
+h3 {
+    font-size: xx-large;
+    color: white;
+    font-family: 'The Nautigal', cursive;
+    font-size: 250%;
+}
+
+.character_bits {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+}
+
+/*INDICE DE VIAJEROS*/
+.cards {
+    width: 90px;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.cards:hover {
+    transform: translate(-10px);
+}
+/*Para el texto*/
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+.texto-encima {
+    position: absolute;
+    font-family: 'The Nautigal', cursive;
+    font-size: xx-large;
+    color: azure;
+    opacity: 0;
+    top: 100%;
+}
+.contenedor:hover .texto-encima {
+    opacity: 1;
+    bottom: -5px;
+}
+
+@media (max-width:768px) {
+
+    /*768x1024*/
+    .character_bits {
+        padding: 30px;
+    }
+}
